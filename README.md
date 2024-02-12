@@ -19,7 +19,7 @@ npm start
 
 ### Routes
 
-- localhost:3000 : Home page of the dashboard where user can select a client from the dropdown at the right hand side of the top navbar
+- localhost:3000: Home page of the dashboard where user can select a client from the dropdown at the right hand side of the top navbar
 - localhost:3000/client/:clientId: Client page of the dashboard with 2 tabs: "Assets" and "Hunts" displaying the corresponding cybersecurity data
 
 ## labs_server
@@ -29,4 +29,5 @@ npm start
 ```
 // start the server
 npm start
+// host: http://localhost:3001
 ```
