@@ -44,7 +44,6 @@ const Layout: FC<Props> = ({ children }) => {
     }, [clientListData]);
 
     useEffect(() => {
-        console.log({ locations, clientList });
         if (locations.length >= 2) {
             const clientId = locations[2];
             for (const client of clientList) {

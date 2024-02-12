@@ -1,0 +1,11 @@
+[
+    {
+        "type": "dropdown",
+        "name": "technology",
+        "options": ["Confluence data center", "Nodejs"]
+    },
+    {
+        "type": "text",
+        "name": "version"
+    }
+]

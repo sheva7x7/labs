@@ -35,6 +35,7 @@ const Filters: FC<Props> = ({ onFiltersApply }) => {
             case 'dropdown':
                 return (
                     <Select
+                        data-testid={`filters-select-${filter.name}`}
                         key={filter.name}
                         placeholder={filter.name}
                         value={filterValues[filter.name]}
@@ -51,6 +52,7 @@ const Filters: FC<Props> = ({ onFiltersApply }) => {
             case 'text':
                 return (
                     <Input
+                        data-testid={`filters-input-${filter.name}`}
                         key={filter.name}
                         value={filterValues[filter.name]}
                         placeholder={filter.name}
@@ -84,8 +86,12 @@ const Filters: FC<Props> = ({ onFiltersApply }) => {
         <Space className={cx(classes.container)}>
             <Text>filters: </Text>
             {filtersData?.map((filter) => renderFilter(filter))}
-            <Button onClick={submitFilters}>Apply filter</Button>
-            <Button onClick={resetFilters}>Reset filter</Button>
+            <Button data-testid="apply-button" onClick={submitFilters}>
+                Apply filter
+            </Button>
+            <Button data-testid="reset-button" onClick={resetFilters}>
+                Reset filter
+            </Button>
         </Space>
     );
 };

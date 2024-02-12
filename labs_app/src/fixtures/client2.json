@@ -1,0 +1,36 @@
+{
+    "id": "2",
+    "name": "Tenant 2",
+    "assets": [
+        {
+            "id": "1",
+            "subdomain": "confluence-tenant.example.com",
+            "port": {
+                "type": "TCP",
+                "number": 80
+            },
+            "technologies": [
+                {
+                    "type": "Confluence data center",
+                    "version": "8.6.0"
+                }
+            ],
+            "hunts": []
+        },
+        {
+            "id": "2",
+            "ip": "1.1.1.1",
+            "port": {
+                "type": "TCP",
+                "number": 80
+            },
+            "technologies": [
+                {
+                    "type": "Nodejs",
+                    "version": "14.0.0"
+                }
+            ],
+            "hunts": []
+        }
+    ]
+}
