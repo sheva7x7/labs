@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "vulnerability_code": "CVE-2023-22522",
+        "description": "Remote Code Execution Vulnerability on Atlassian Confluence Data Centers",
+        "client_id": "1",
+        "technology": {
+            "type": "Confluence data center",
+            "versions": ["8.6.0", "8.6.1"]
+        }
+    }
+]
