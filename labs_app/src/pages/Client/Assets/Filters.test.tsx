@@ -1,4 +1,3 @@
-import { MemoryRouter } from 'react-router-dom';
 import { renderWithClient } from '../../../testUtils';
 import Filters from './Filters';
 import { fireEvent, waitFor, act, screen } from '@testing-library/react';

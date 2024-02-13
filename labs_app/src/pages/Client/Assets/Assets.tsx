@@ -103,6 +103,7 @@ const Assets = () => {
         <div>
             <Filters onFiltersApply={onFiltersApply} />
             <Table
+                data-testid="assets-table"
                 columns={columns}
                 dataSource={rows || []}
                 loading={isLoading}
